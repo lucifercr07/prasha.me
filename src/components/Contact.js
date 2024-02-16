@@ -37,7 +37,7 @@ export default function Contact() {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=5th+Phase,+J.+P.+Nagar,+Bengaluru,+Karnataka,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2186135508796!2d77.65264997616762!3d12.957858415177176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13f792eb9cb3%3A0x7fd1aef3b7076727!2sChurch%20St%2C%20Kaveri%20Nagar%2C%20Murgesh%20Pallya%2C%20Bengaluru%2C%20Karnataka%20560017!5e0!3m2!1sen!2sin!4v1708116750488!5m2!1sen!2sin"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
@@ -45,8 +45,8 @@ export default function Contact() {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                JP Nagar 5th phase <br />
-                Bengaluru, KA 560078
+                Murgesh Pallya, Church Street <br />
+                Bengaluru, KA 560017
               </p>
             </div>
             <div className="lg:w-1/2 pl-6 pr-12 mt-4 lg:mt-0">
