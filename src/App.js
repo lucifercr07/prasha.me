@@ -1,15 +1,13 @@
 import React  from "react";
 
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+import RoutesTree from "./components/RoutesTree";
 
-export default function App() {
+function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <About />
-      <Skills />
-      <Contact />
-    </main>
+    <div>
+      <RoutesTree />
+    </div>  
   );
 }
+
+export default App;
