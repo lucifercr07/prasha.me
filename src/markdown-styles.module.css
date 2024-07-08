@@ -1,0 +1,9 @@
+.reactMarkDown {
+  @apply p-2;
+}
+
+.reactMarkDown li {
+  @apply p-1.5 hover:underline;
+  color: mintcream;
+  text-underline-offset: 6px;
+}
