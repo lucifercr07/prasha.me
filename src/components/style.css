@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Apply styles to the main Collapsible container */
+.Collapsible {
+  @apply m-2 p-3 text-3xl text-white font-spartan text-left border border-gray-300 rounded-lg;
+}
+
+/* Apply styles to the trigger element when closed */
+.Collapsible__trigger.is-closed {
+  @apply p-1.5 text-3xl rounded bg-indigo-500 text-white flex items-center justify-between cursor-pointer;
+}
+
+/* Apply styles to the trigger element when open */
+.Collapsible__trigger.is-open {
+  @apply p-1.5 text-4xl text-white opacity-75 bg-indigo-500 rounded flex items-center justify-between cursor-pointer italic;
+}
+
+/* Apply styles to the arrow icon */
+.Collapsible__trigger svg {
+  @apply w-6 h-6; /* Example size for the arrow icon */
+  transition: transform 0.3s ease; /* Example transition effect */
+}
+
+.Collapsible__trigger.is-closed svg {
+  transform: rotate(270deg);
+}
+
+/* Rotate the arrow icon when Collapsible is open */
+.Collapsible__trigger.is-open svg {
+  transform: rotate(360deg);
+}
+
+/* Apply styles to the content outer container */
+.Collapsible__contentOuter {
+  @apply text-2xl;
+  background: repeating-linear-gradient(45deg, black, transparent 100px);
+}
+
+/* Apply styles to the content inner container */
+.Collapsible__contentInner {
+  @apply m-2 text-2xl p-1.5;
+  color: lightslategray;
+}

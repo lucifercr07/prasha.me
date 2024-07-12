@@ -8,14 +8,14 @@ export default function About() {
                 <a href="/" className="pl-2 pr-20 text-green-400 border-b-4 border-green-500">Home</a>
                 <a href="/blogs/"
                     className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Blogs</a>
+                <a href="/projects/"
+                    className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Projects</a>
                 <a href="/scribs/"
                     className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Random Scribs</a>
                 <a href="/papers-shelve/"
                     className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Papers Stack</a>
                 <a href="/books-shelve/"
                     className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Books Nook</a>    
-                <a href="/cv/"
-                    className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Resume</a>
             </div>
           </div>
           <div className="border-8 border-gray-600 rounded-full overflow-hidden w-48 h-48 mx-auto">

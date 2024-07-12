@@ -2,20 +2,20 @@ import React from "react";
 
 function Blogs() {
     return (
-      <div className="bg-gray-900 min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-gray-900 min-h-screen flex flex-col items-center">
         {/* Header */}
         <div className="flex justify-center text-2xl py-10 hidden md:flex font-spartan">
           <a href="/" className="pr-24 text-gray-400 hover:text-green-400 transition duration-300">Home</a>
           <a href="/blogs/"
               className="pl-2 pr-20 text-green-400 border-b-4 border-green-500">Blogs</a>
+          <a href="/projects/"
+              className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Projects</a>    
           <a href="/scribs/"
               className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Random Scribs</a>
           <a href="/papers-shelve/"
               className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Papers Stack</a>
           <a href="/books-shelve/"
               className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Books Nook</a>    
-          <a href="/cv/"
-              className="pl-24 text-gray-400 hover:text-green-400 transition duration-300">Resume</a>
         </div>
         {/* Blog section */}
         <section class="text-gray-600 body-font">
@@ -188,7 +188,7 @@ function Blogs() {
                 </div>
               </div>
             </div>
-          </div>
+        </div>
         </section>
       </div>
     );

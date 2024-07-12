@@ -1,0 +1,20 @@
+.reactMarkDown {
+  @apply p-2;
+}
+
+.reactMarkDown li {
+  @apply m-1;
+  color: mintcream;
+  a {
+    @apply underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.reactMarkDown p {
+  color: mintcream;
+  a {
+    @apply underline;
+    text-underline-offset: 4px;
+  }
+}
