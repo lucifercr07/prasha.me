@@ -2,18 +2,14 @@ import React, { useState, useEffect } from "react";
 import MarkdownRenderer from "./MarkdownRenderer";
 import Collapsible from 'react-collapsible';
 import './style.css';
-import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
-
-const markdown = '# Hi, *Pluto*!'
+import { FaArrowDown } from 'react-icons/fa';
 
 function Projects() {
   const [concurrencyContent, setConcurrencyContent] = useState('');
-  const [count, setCount] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
 
   // Function to fetch content when Collapsible is opened
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/lucifercr07/obsidian/main/Java/Multithreading/Hands%20on%20Resources.md")
+    fetch("https://raw.githubusercontent.com/lucifercr07/multithreading/main/src/main/java/org/example/arpit/concurrency/temp-artifact/Concurrency%20implementations.md")
       .then((response) => {
         if (response.ok) return response.text();
         else return Promise.reject("Didn't fetch text correctly");
@@ -44,7 +40,18 @@ function Projects() {
         </div>
       </div>
       {/* Projects section */}
-      <div className="flex flex-col items-center mt-16">
+      <div className="flex flex-col ml-96 mr-96 mt-16">
+        {/* DSA Collapsible */}
+        <Collapsible
+          trigger={["Data Structures and Algorithms", <FaArrowDown />]}
+          className="custom-collapsible"
+          triggerClassName="custom-trigger"
+          triggerOpenedClassName="custom-trigger opened"
+          contentOuterClassName="custom-content-outer"
+          contentInnerClassName="custom-content-inner"
+        >
+          <MarkdownRenderer content={'List of problems solved can be found [here](https://github.com/lucifercr07/GFG)'} />
+        </Collapsible>
         {/* Concurrency Collapsible */}
         <Collapsible
           trigger={["Concurrency", <FaArrowDown />]}

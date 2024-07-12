@@ -2,7 +2,7 @@ import React from "react";
 
 function Blogs() {
     return (
-      <div className="bg-gray-900 min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-gray-900 min-h-screen flex flex-col items-center">
         {/* Header */}
         <div className="flex justify-center text-2xl py-10 hidden md:flex font-spartan">
           <a href="/" className="pr-24 text-gray-400 hover:text-green-400 transition duration-300">Home</a>
